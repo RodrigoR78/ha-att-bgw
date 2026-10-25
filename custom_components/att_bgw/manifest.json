@@ -1,14 +1,20 @@
 {
   "domain": "att_bgw",
   "name": "AT&T BGW Gateway (Local)",
-  "codeowners": ["@RodrigoR78"],
+  "codeowners": [
+    "@RodrigoR78"
+  ],
   "config_flow": true,
-  "dependencies": ["diagnostics"],
+  "dependencies": [
+    "diagnostics"
+  ],
   "documentation": "https://github.com/RodrigoR78/ha-att-bgw",
   "integration_type": "device",
   "iot_class": "local_polling",
   "issue_tracker": "https://github.com/RodrigoR78/ha-att-bgw/issues",
-  "loggers": ["custom_components.att_bgw"],
+  "loggers": [
+    "custom_components.att_bgw"
+  ],
   "requirements": [],
-  "version": "1.0.0"
+  "version": "1.0.1"
 }

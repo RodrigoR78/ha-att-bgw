@@ -102,6 +102,7 @@ async def async_setup_entry(
 
 class BgwSensor(BgwEntity, SensorEntity):
     entity_description: BgwSensorDescription
+    _unrecorded_attributes = frozenset({"devices"})  # changes every poll (last_activity)
 
     def __init__(self, coordinator, description: BgwSensorDescription) -> None:
         super().__init__(coordinator, description.key)
@@ -119,4 +120,8 @@ class BgwSensor(BgwEntity, SensorEntity):
                     "network_type": d.broadband.network_type, "source": d.broadband.source}
         if self.entity_description.key == "link_speed":
             return {"duplex": d.broadband.duplex, "line_state": d.broadband.line_state}
+        if self.entity_description.key == "devices_known":
+            return {"devices": self.coordinator.device_rows(d)}
+        if self.entity_description.key == "last_boot":
+            return {"software_version": d.sysinfo.software_version, "model": d.sysinfo.model}
         return None

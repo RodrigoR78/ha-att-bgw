@@ -158,6 +158,23 @@ class BgwCoordinator(DataUpdateCoordinator[BgwData]):
                 names[mac] = name
         return names
 
+    def dns_name(self, ip: str) -> str:
+        return self._dns.get(ip, ("", 0))[0] if ip else ""
+
+    def device_rows(self, data: BgwData) -> list[dict]:
+        """All devices as plain dicts, sorted by IPv4 - for dashboard tables. Field names match the
+        old lan-devices poller (dns / bgw_name / status / ip_sort) so existing templates keep working."""
+        rows = []
+        for mac, d in data.devices.items():
+            last = d.last_activity
+            rows.append({
+                "mac": mac, "ip": d.ip, "name": data.names.get(mac, ""), "dns": self.dns_name(d.ip),
+                "bgw_name": d.name, "status": "on" if d.online else "off", "allocation": d.allocation,
+                "connection": d.connection, "last_activity": last.strftime("%Y-%m-%d %H:%M") if last else "",
+                "ipv6": len(d.ipv6), "ip_sort": _ip_sort(d.ip),
+            })
+        return sorted(rows, key=lambda r: (r["ip_sort"], r["mac"]))
+
     async def _detect_new(self, data: BgwData) -> None:
         macs = set(data.devices)
         if self.known_macs is None:  # first run ever: seed, don't announce the whole LAN
@@ -176,6 +193,13 @@ class BgwCoordinator(DataUpdateCoordinator[BgwData]):
         if data.new_macs:
             self.known_macs |= macs
             await self._store.async_save(sorted(self.known_macs))
+
+
+def _ip_sort(ip: str) -> int:
+    try:
+        return int.from_bytes(socket.inet_aton(ip), "big")
+    except OSError:
+        return 1 << 32  # devices without IPv4 sort last
 
 
 def _reverse_dns(ip: str) -> str:
