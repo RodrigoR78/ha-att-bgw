@@ -1,0 +1,3340 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" >
+    <head>
+        <title>Device List</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <meta http-equiv="Content-Script-Type" content="type" />
+        <link rel="icon" type="image/ico" href="/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="/baseINID.css" />
+        <link rel="stylesheet" type="text/css" href="/INID.css" />
+<script type="text/css"><!--
+<style id="antiClickjack" type="text/css">body{display:none;}</style>
+//-->
+</script>
+    <script language="javascript" type="text/javascript"><!--
+  adImages=new Array('/images/Block1.gif','/images/Block3.gif','/images/Block5.gif','/images/Block7.gif','/images/Block9.gif','/images/Block11.gif','/images/Block14.gif')
+  thisAd=0
+  imgCt=adImages.length
+if (self == top) {
+    var antiClickjack = document.getElementById("antiClickjack");
+    antiClickjack.parentNode.removeChild(antiClickjack);
+} else {
+    top.location = self.location;
+}
+function rotate(){
+    if (document.images) {
+        thisAd++
+            if (thisAd==imgCt){
+                thisAd=0
+            }
+        document.adBanner.src=adImages[thisAd]
+            setTimeout('rotate()',200)
+    }
+}
+function reloadPage()
+{
+    if (document.forms[0].hidden.value == "update_refresh") {
+      rotate()
+    }
+    else if (document.forms[0].hidden.value == "freshen") {
+      setTimeout("self.location.reload(true)", 10000)
+      rotate()
+    }
+}
+
+
+//-->
+</script>
+    </head>
+           <body>
+  <div id="wrapper">
+    <div id="whole-page">
+      <div id="main-content">
+        <div id="header">
+          <div id="tab-container">
+            <div id="logo-div">
+	      <img id="main-logo" src="/images/att_logo.png" alt="" style="height:42px;" />
+            </div>
+            <div style="clear: both;"></div>
+<div id="skip"><a href="#content-sub">Skip to Main Content</a></div>
+            <div id="top-navigation">
+              <div id="top-navigation-buttons">
+<a class="topnav topnavselected" href="/cgi-bin/home.ha"><span>Device</span></a>
+<a class="topnav" href="/cgi-bin/broadbandstatistics.ha"><span>Broadband</span></a>
+<a class="topnav" href="/cgi-bin/lanstatistics.ha"><span>
+Home Network
+</span></a>
+
+<a class="topnav" href="/cgi-bin/voice.ha"><span>Voice</span></a>
+<a class="topnav" href="/cgi-bin/firewall.ha"><span>Firewall</span></a>
+<a class="topnav" href="/cgi-bin/diag.ha"><span>Diagnostics</span></a>
+              <div style="clear: both;"></div>
+            </div>
+          </div>
+          <div id="secondary-nav">
+            <div id="secondary-nav-buttons">
+<a class="secondary-link" href="/cgi-bin/home.ha">Status</a>
+<a class="secondary-link sec-selected" href="/cgi-bin/devices.ha">Device List</a>
+<a class="secondary-link" href="/cgi-bin/sysinfo.ha">System Information</a>
+<a class="secondary-link" href="/cgi-bin/routerpasswd.ha">Access Code</a>
+<a class="secondary-link" href="/cgi-bin/remoteaccess.ha">Remote Access</a>
+<a class="secondary-link" href="/cgi-bin/restart.ha">Restart Device</a>
+                  </div></div></div>
+                <div style="clear: both;"></div>
+              </div>
+        <div style="clear: both;"></div>
+      <div id="mid-section">
+          <div id="content-padding"><!-- CONTENT -->
+            <div id="content"
+><div id="content-sub">
+                <div class="first-section-header">
+                 <h1>Device List</h1>
+                 </div>
+                   <form method="post" action="/cgi-bin/devices.ha">
+<input type="hidden" name="nonce" value="839e77b435766d01bce9516efa6a4ece842095e4684e6b70095a74e0551662fe" />
+                 <div class="section-content">
+                 <h2>Home Network Devices&nbsp;&nbsp;</h2>
+                 <input type="submit" name="Clear" class="cssbtn largebtn" value="Clear and Rescan for Devices"  />
+                 <table class="table100" summary="This table displays info for each LAN-side device">
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:01
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.100
+ / unknown020000000001
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:39:25 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><th scope="row">IPv6 Address</th><td class="col2">
+2001:db8::4
+</td></tr>
+<tr><th scope="row">Type</th><td class="col2">
+slaac
+</td></tr>
+<tr><th scope="row">Valid Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><th scope="row">Preferred Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><th scope="row">IPv6 Address</th><td class="col2">
+2001:db8::5
+</td></tr>
+<tr><th scope="row">Type</th><td class="col2">
+slaac
+</td></tr>
+<tr><th scope="row">Valid Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><th scope="row">Preferred Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:02
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.105
+ / unknown020000000002
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:41:19 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:03
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.51
+ / unknown020000000003
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:42:06 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:04
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.142
+ / unknown020000000004
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:39:23 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:05
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.93
+ / unknown020000000005
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Fri Oct 23 20:04:03 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-4
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:06
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.55
+ / unknown020000000006
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:42:28 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:07
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.91
+ / unknown020000000007
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:39:26 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><th scope="row">IPv6 Address</th><td class="col2">
+2001:db8::6
+</td></tr>
+<tr><th scope="row">Type</th><td class="col2">
+slaac
+</td></tr>
+<tr><th scope="row">Valid Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><th scope="row">Preferred Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><th scope="row">IPv6 Address</th><td class="col2">
+2001:db8::7
+</td></tr>
+<tr><th scope="row">Type</th><td class="col2">
+slaac
+</td></tr>
+<tr><th scope="row">Valid Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><th scope="row">Preferred Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:08
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000008
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Thu Sep 24 17:34:46 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:09
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000009
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sat Sep 19 16:14:28 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:0a
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown02000000000a
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sat Sep 19 15:29:35 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:0b
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown02000000000b
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sat Sep 19 16:44:29 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:0c
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown02000000000c
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Wed Oct  7 17:49:03 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:0d
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown02000000000d
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Thu Sep 24 20:20:19 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:0e
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown02000000000e
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 18 10:42:45 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:0f
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown02000000000f
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Thu Sep 24 20:56:29 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:10
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000010
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Wed Oct  7 17:49:40 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:11
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000011
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Thu Sep 24 17:19:46 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:12
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000012
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sat Oct 17 11:41:28 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:13
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000013
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Thu Oct 15 09:11:20 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:14
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000014
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sat Sep 19 13:24:46 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:15
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000015
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Thu Sep 24 17:19:46 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:16
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000016
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sat Sep 19 13:51:22 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:17
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000017
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sat Oct 17 11:47:39 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:18
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000018
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Wed Oct 14 18:36:19 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:19
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000019
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Wed Oct 14 18:26:20 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:1a
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown02000000001a
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Thu Sep 24 17:19:46 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:1b
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown02000000001b
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Wed Oct 14 17:26:05 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+pending
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:1c
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown02000000001c
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Tue Oct 20 11:16:57 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:1d
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown02000000001d
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Thu Sep 24 20:20:19 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:1e
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.70
+ / unknown02000000001e
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:42:13 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><th scope="row">IPv6 Address</th><td class="col2">
+2001:db8::8
+</td></tr>
+<tr><th scope="row">Type</th><td class="col2">
+slaac
+</td></tr>
+<tr><th scope="row">Valid Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><th scope="row">Preferred Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><th scope="row">IPv6 Address</th><td class="col2">
+2001:db8::9
+</td></tr>
+<tr><th scope="row">Type</th><td class="col2">
+slaac
+</td></tr>
+<tr><th scope="row">Valid Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><th scope="row">Preferred Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:1f
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown02000000001f
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Thu Sep 24 17:19:46 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:20
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000020
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sat Sep 19 13:24:46 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:21
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.201
+ / unknown020000000021
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:42:18 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><th scope="row">IPv6 Address</th><td class="col2">
+2001:db8::a
+</td></tr>
+<tr><th scope="row">Type</th><td class="col2">
+slaac
+</td></tr>
+<tr><th scope="row">Valid Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><th scope="row">Preferred Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><th scope="row">IPv6 Address</th><td class="col2">
+2001:db8::b
+</td></tr>
+<tr><th scope="row">Type</th><td class="col2">
+slaac
+</td></tr>
+<tr><th scope="row">Valid Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><th scope="row">Preferred Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:22
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000022
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 18 10:42:45 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:23
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000023
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Wed Oct 14 19:31:20 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:24
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000024
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 18 07:57:52 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:25
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000025
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Thu Oct 15 09:11:20 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:26
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000026
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Thu Oct 15 09:11:20 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:27
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000027
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 18 11:08:50 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+pending
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:28
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000028
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Thu Sep 24 20:20:19 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:29
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000029
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Thu Sep 24 17:19:46 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:2a
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown02000000002a
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Wed Oct 14 19:01:18 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:2b
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown02000000002b
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 18 10:43:42 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:2c
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown02000000002c
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Wed Oct 14 17:53:50 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+pending
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:2d
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.56
+ / unknown02000000002d
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:39:25 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><th scope="row">IPv6 Address</th><td class="col2">
+2001:db8::c
+</td></tr>
+<tr><th scope="row">Type</th><td class="col2">
+slaac
+</td></tr>
+<tr><th scope="row">Valid Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><th scope="row">Preferred Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><th scope="row">IPv6 Address</th><td class="col2">
+2001:db8::d
+</td></tr>
+<tr><th scope="row">Type</th><td class="col2">
+slaac
+</td></tr>
+<tr><th scope="row">Valid Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><th scope="row">Preferred Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:2e
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.80
+ / unknown02000000002e
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:39:26 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><th scope="row">IPv6 Address</th><td class="col2">
+2001:db8::e
+</td></tr>
+<tr><th scope="row">Type</th><td class="col2">
+slaac
+</td></tr>
+<tr><th scope="row">Valid Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><th scope="row">Preferred Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><th scope="row">IPv6 Address</th><td class="col2">
+2001:db8::f
+</td></tr>
+<tr><th scope="row">Type</th><td class="col2">
+slaac
+</td></tr>
+<tr><th scope="row">Valid Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><th scope="row">Preferred Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:2f
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.83
+ / unknown02000000002f
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:39:22 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:30
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000030
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Thu Oct 15 09:11:20 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:31
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000031
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 18 10:42:45 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:32
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000032
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Thu Sep 24 20:20:19 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:33
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000033
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 18 10:42:45 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:34
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000034
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Thu Sep 24 17:19:46 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:35
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000035
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 18 10:47:48 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:36
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000036
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Wed Oct 14 19:17:09 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:37
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000037
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Tue Sep  8 12:32:39 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:38
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000038
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Thu Oct 15 09:11:20 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:39
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000039
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Thu Oct 15 08:26:20 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:3a
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown02000000003a
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sat Sep 19 13:51:22 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:3b
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown02000000003b
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Thu Oct 15 09:11:20 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:3c
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown02000000003c
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Wed Oct  7 17:49:03 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:3d
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown02000000003d
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 18 10:42:45 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:3e
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown02000000003e
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sat Sep 19 13:24:46 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:3f
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown02000000003f
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Fri Oct 23 16:33:34 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:40
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.123
+ / unknown020000000040
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:39:23 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:41
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000041
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Wed Oct 14 06:36:14 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:42
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000042
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Thu Sep  3 20:13:18 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:43
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.181
+ / unknown020000000043
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:41:49 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:44
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000044
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Mon Oct 12 10:33:13 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:45
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.77
+ / unknown020000000045
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Tue Oct 20 15:34:22 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:46
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.117
+ / unknown020000000046
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:39:23 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:47
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.158
+ / unknown020000000047
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:42:42 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:48
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.102
+ / unknown020000000048
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Thu Oct 22 19:24:53 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:49
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000049
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Thu Oct 15 13:50:44 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:4a
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown02000000004a
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sat Sep 19 16:39:38 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:4b
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.96
+ / unknown02000000004b
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:41:48 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><th scope="row">IPv6 Address</th><td class="col2">
+2001:db8::10
+</td></tr>
+<tr><th scope="row">Type</th><td class="col2">
+slaac
+</td></tr>
+<tr><th scope="row">Valid Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><th scope="row">Preferred Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:4c
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.101
+ / unknown02000000004c
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:42:20 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><th scope="row">IPv6 Address</th><td class="col2">
+2001:db8::11
+</td></tr>
+<tr><th scope="row">Type</th><td class="col2">
+slaac
+</td></tr>
+<tr><th scope="row">Valid Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><th scope="row">Preferred Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:4d
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.124
+ / unknown02000000004d
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:42:10 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:4e
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.108
+ / unknown02000000004e
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:42:34 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:4f
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.190
+ / unknown02000000004f
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:41:55 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><th scope="row">IPv6 Address</th><td class="col2">
+2001:db8::12
+</td></tr>
+<tr><th scope="row">Type</th><td class="col2">
+slaac
+</td></tr>
+<tr><th scope="row">Valid Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><th scope="row">Preferred Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><th scope="row">IPv6 Address</th><td class="col2">
+2001:db8::13
+</td></tr>
+<tr><th scope="row">Type</th><td class="col2">
+slaac
+</td></tr>
+<tr><th scope="row">Valid Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><th scope="row">Preferred Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:50
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.112
+ / unknown020000000050
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:42:03 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:51
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000051
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 11 08:54:24 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:52
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000052
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Tue Sep  8 18:05:45 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-3
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:53
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000053
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Tue Sep  8 20:27:41 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-3
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:54
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.69
+ / unknown020000000054
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:39:22 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:55
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.193
+ / unknown020000000055
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:39:24 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:56
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000056
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Mon Sep  7 09:24:39 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:57
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000057
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Tue Oct 20 17:07:08 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+pending
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:58
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.183
+ / unknown020000000058
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:42:23 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:59
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.176
+ / unknown020000000059
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:39:24 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:5a
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown02000000005a
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Mon Oct 12 22:21:47 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:5b
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.135
+ / unknown02000000005b
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:40:10 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:5c
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.139
+ / unknown02000000005c
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Thu Oct 22 22:14:23 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:5d
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.58
+ / unknown02000000005d
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:42:08 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:5e
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.114
+ / unknown02000000005e
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:42:39 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:5f
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.131
+ / unknown02000000005f
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:42:12 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:60
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000060
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Thu Sep  3 06:58:57 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:61
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000061
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Fri Sep 11 11:17:57 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:62
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.191
+ / unknown020000000062
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:42:15 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:63
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.8
+ / unknown020000000063
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:39:20 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:64
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.85
+ / unknown020000000064
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:39:22 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:65
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000065
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct  4 04:54:08 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:66
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.71
+ / unknown020000000066
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:39:22 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:67
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.72
+ / unknown020000000067
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:41:56 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:68
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.179
+ / unknown020000000068
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:42:07 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:69
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.98
+ / unknown020000000069
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:42:42 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:6a
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.95
+ / unknown02000000006a
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:42:11 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:6b
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown02000000006b
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Tue Sep 22 03:19:05 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:6c
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.200
+ / unknown02000000006c
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:42:19 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:6d
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.168
+ / unknown02000000006d
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:41:43 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:6e
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.115
+ / unknown02000000006e
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Tue Oct 20 16:38:43 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:6f
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown02000000006f
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Aug 30 17:00:56 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:70
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000070
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Aug 30 17:17:30 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:71
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000071
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Wed Oct 14 10:44:02 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+pending
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:72
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.54
+ / unknown020000000072
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:40:14 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><th scope="row">IPv6 Address</th><td class="col2">
+2001:db8::14
+</td></tr>
+<tr><th scope="row">Type</th><td class="col2">
+slaac
+</td></tr>
+<tr><th scope="row">Valid Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><th scope="row">Preferred Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:73
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.50
+ / unknown020000000073
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:42:13 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><th scope="row">IPv6 Address</th><td class="col2">
+2001:db8::15
+</td></tr>
+<tr><th scope="row">Type</th><td class="col2">
+slaac
+</td></tr>
+<tr><th scope="row">Valid Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><th scope="row">Preferred Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><th scope="row">IPv6 Address</th><td class="col2">
+2001:db8::16
+</td></tr>
+<tr><th scope="row">Type</th><td class="col2">
+slaac
+</td></tr>
+<tr><th scope="row">Valid Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><th scope="row">Preferred Lifetime</th><td class="col2">
+forever
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:74
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000074
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Mon Oct 12 19:05:39 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:75
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000075
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 18 08:53:14 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:76
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.62
+ / unknown020000000076
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:41:55 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:77
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.133
+ / unknown020000000077
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:42:40 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:78
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.119
+ / unknown020000000078
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:42:25 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:79
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000079
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Aug 30 11:16:12 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:7a
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown02000000007a
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Sep 20 16:15:34 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:7b
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.97
+ / unknown02000000007b
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:42:19 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:7c
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.113
+ / unknown02000000007c
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:41:39 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:7d
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown02000000007d
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Mon Sep  7 15:10:35 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-3
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:7e
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown02000000007e
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sat Oct 10 19:31:49 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:7f
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.90
+ / unknown02000000007f
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:42:19 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:80
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.122
+ / unknown020000000080
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:40:48 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:81
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.73
+ / unknown020000000081
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Tue Oct 20 17:03:36 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:82
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000082
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Tue Oct 20 14:59:21 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+pending
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:83
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.128
+ / unknown020000000083
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Tue Oct 13 20:31:01 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:84
+</td></tr>
+<tr><th scope="row">Name</th><td class="col2">
+unknown020000000084
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Fri Sep 18 03:50:24 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+off
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+<tr><th scope="row">MAC Address</th><td class="col2">
+02:00:00:00:00:85
+</td></tr>
+<tr><th scope="row">IPv4 Address / Name</th><td class="col2">
+10.20.30.184
+ / unknown020000000085
+</td></tr>
+<tr><th scope="row">Last Activity</th><td class="col2">
+Sun Oct 25 07:42:38 2026
+</td></tr>
+<tr><th scope="row">Status</th><td class="col2">
+on
+</td></tr>
+<tr><th scope="row">Allocation</th><td class="col2">
+static
+</td></tr>
+<tr><th scope="row">Connection Type</th>
+<td class="col2"><pre class="column">Ethernet LAN-2
+</pre></td></tr>
+<tr><th scope="row">Mesh Client</th><td class="col2">
+No
+</td></tr>
+<tr><td colspan="2"><hr class="reshr" noshade="noshade" /></td></tr>
+</table>
+</div>
+</form>
+                </div>
+              </div>
+            </div>
+ <!-- isWANUP -->
+            <div id="help">
+              <div id="help-sub">
+              <h2>Help</h2><br />
+<p>The device list page shows all items of the LAN Host Discovery table. Use the &quot;Clear and Rescan for Devices&quot; button to reset the devices table and do a fresh search for connected LAN devices.</p>
+<p>
+Allocation types include static and dhcp. When the allocation type of a device has not yet been determined, it is marked pending.
+Devices that are powered off will continue to appear in the table, but be shown as &quot;off&quot; for a period of more than a day.</p>
+<p>The Last Activity display will be blank if the WAN is down or the device cannot reach a time server.</p>
+              </div> <!-- help-sub -->
+            </div> <!-- help -->
+            <div style="clear: both;"></div>
+          </div>
+        </div>
+        <div style="clear: both;"></div>
+      </div>
+      <div id="footer">
+      <div><br>
+   <span class="inner">&copy; 2016-2023 AT&T Intellectual Property. All rights reserved. AT&T and Globe logo are registered trademarks of AT&T Intellectual Property.</span>
+   <span class="sitemap"><a href="/cgi-bin/sitemap.ha">Site Map</a></span></br></div>
+   <div><span class="inner">&copy; 2016 ARRIS Enterprises LLC. All rights reserved. ARRIS is a registered trademark of ARRIS Enterprises LLC.</span></div>
+   </div>
+      </div>
+</body>
+</html>

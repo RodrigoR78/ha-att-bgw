@@ -1,0 +1,99 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "AT&T BGW gateway",
+        "description": "Address of your BGW210 / BGW320 gateway. The status pages it reads need no password.",
+        "data": {
+          "host": "Gateway address"
+        }
+      },
+      "reconfigure": {
+        "title": "Gateway address",
+        "description": "Change the address Home Assistant uses to reach the gateway.",
+        "data": {
+          "host": "Gateway address"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not reach the gateway's web interface at that address.",
+      "not_bgw": "That address answered, but not with a BGW gateway's system information page."
+    },
+    "abort": {
+      "already_configured": "This gateway is already configured (its address was updated).",
+      "reconfigure_successful": "Gateway address updated.",
+      "wrong_device": "That address belongs to a different gateway than this entry."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Gateway options",
+        "data": {
+          "scan_interval": "Polling interval (seconds)",
+          "reverse_dns": "Name devices from reverse DNS",
+          "track_new_devices": "Create trackers for newly seen devices"
+        },
+        "data_description": {
+          "reverse_dns": "Useful when another server (e.g. Pi-hole) does DHCP and DNS, so the gateway itself doesn't know device names.",
+          "track_new_devices": "New devices still fire the att_bgw_new_device event when this is off."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "wan_download": {
+        "name": "WAN download"
+      },
+      "wan_upload": {
+        "name": "WAN upload"
+      },
+      "wan_received": {
+        "name": "WAN data received"
+      },
+      "wan_sent": {
+        "name": "WAN data sent"
+      },
+      "link_speed": {
+        "name": "WAN link speed"
+      },
+      "wan_ipv4": {
+        "name": "WAN IPv4 address"
+      },
+      "wan_ipv6": {
+        "name": "WAN IPv6 address"
+      },
+      "devices_online": {
+        "name": "Devices online"
+      },
+      "devices_known": {
+        "name": "Devices known"
+      },
+      "last_boot": {
+        "name": "Last boot"
+      },
+      "wan_rx_errors": {
+        "name": "WAN receive errors"
+      },
+      "wan_tx_errors": {
+        "name": "WAN transmit errors"
+      },
+      "wan_rx_drops": {
+        "name": "WAN receive drops"
+      },
+      "wan_tx_drops": {
+        "name": "WAN transmit drops"
+      }
+    },
+    "binary_sensor": {
+      "broadband": {
+        "name": "Broadband"
+      },
+      "lan_port": {
+        "name": "LAN port {port}"
+      }
+    }
+  }
+}
