@@ -29,3 +29,13 @@ jobs:
         with:
           python-version: "3.13"
       - run: python tests/test_parser.py
+
+  boot-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+      - run: pip install homeassistant
+      - run: python tests/test_boot.py

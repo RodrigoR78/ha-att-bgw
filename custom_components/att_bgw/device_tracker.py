@@ -10,6 +10,8 @@ from typing import Any
 
 from homeassistant.components.device_tracker import ScannerEntity
 from homeassistant.core import HomeAssistant, callback
+from homeassistant.helpers import device_registry as dr
+from homeassistant.helpers.device_registry import DeviceInfo
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant.helpers.update_coordinator import CoordinatorEntity
 from homeassistant.util import dt as dt_util
@@ -43,6 +45,17 @@ class BgwTracker(CoordinatorEntity[BgwCoordinator], ScannerEntity):
         self._mac = mac
         self._attr_mac_address = mac
         self._attr_name = coordinator.data.names.get(mac) or mac
+        self._attr_device_info = self._build_device_info()
+
+    def _build_device_info(self) -> DeviceInfo:
+        """The MAC only names a new device, so it never replaces a name given earlier."""
+        connections = {(dr.CONNECTION_NETWORK_MAC, self._mac)}
+        name = self.coordinator.data.names.get(self._mac)
+        if not name and not dr.async_get(self.coordinator.hass).async_get_devices(
+            connections=connections, config_entry_id=self.coordinator.config_entry.entry_id
+        ):
+            name = self._mac
+        return DeviceInfo(connections=connections, name=name) if name else DeviceInfo(connections=connections)
 
     @property
     def _device(self):
